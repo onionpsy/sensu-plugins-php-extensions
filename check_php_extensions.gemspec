@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'Sensu plugin for checking if php extensions are loaded'
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
-
+  spec.required_ruby_version  = '>= 2.0.0'
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
@@ -21,8 +21,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
   
-  spec.add_runtime_dependency 'sensu-plugin',  '~> 1.2'
-
+  spec.add_runtime_dependency 'sensu-plugin',  '~> 2.2'
+  spec.add_development_dependency 'codeclimate-test-reporter', '~> 0.4'
+  spec.add_development_dependency 'rspec'
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
+ 
 end
