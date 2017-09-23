@@ -52,7 +52,6 @@ class CheckPHPExtensions < Sensu::Plugin::Check::CLI
   
   def get_extensions
     stdout, stderr, status = Open3.capture3("#{config[:php]} -m")
-    STDERR.puts stderr
     if status.success?
       stdout.split("\n").reject {|e| e.index(/[\[\]]/) || e.empty?}
     else

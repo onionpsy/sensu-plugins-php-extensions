@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Sensu plugin for checking if php extensions are loaded'
   spec.description   = 'Sensu plugin for checking if php extensions are loaded'
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/onionpsy/sensu-plugins-php-extensions"
   spec.license       = "MIT"
   spec.required_ruby_version  = '>= 2.0.0'
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
