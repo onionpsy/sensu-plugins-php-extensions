@@ -1,4 +1,4 @@
-require "check_php_extensions/version"
+require "check-php-extensions/version"
 
 module CheckPhpExtensions
   # Your code goes here...

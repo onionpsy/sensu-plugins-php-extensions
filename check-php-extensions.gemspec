@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'check_php_extensions/version'
+require 'check-php-extensions/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "check_php_extensions"
+  spec.name          = "check-php-extensions"
   spec.version       = CheckPhpExtensions::VERSION
   spec.authors       = ["onionpsy"]
   spec.email         = ["patrice.salathe@gmail.com"]
@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   
   spec.add_runtime_dependency 'sensu-plugin',  '~> 2.2'
   spec.add_development_dependency 'codeclimate-test-reporter', '~> 0.4'
-  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'rspec', '~>0'
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
  
